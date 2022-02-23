@@ -10,7 +10,7 @@ contract LotteryTest is DSTest {
     address currencyAddr;
     address coordinatorAddr;
     address linkAddr;
-    uint256 keyHash;
+    bytes32 keyHash;
 
     function setUp() public {
         lotInst = new Lottery(currencyAddr, coordinatorAddr, linkAddr, keyHash);
